@@ -1,5 +1,9 @@
 public class TypeVariable {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        double salary = 2500;
+
+        short shortNumber = 1;
+        int normalNumber = shortNumber;
+        short shortNumber2 = (short) normalNumber;
     }
 }
