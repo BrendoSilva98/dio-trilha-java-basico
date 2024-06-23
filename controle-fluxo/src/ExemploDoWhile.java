@@ -14,7 +14,7 @@ public class ExemploDoWhile {
     }
 
     private static boolean tocando() {
-        boolean atendeu = new Random().nextInt(3) == 1;
+        boolean atendeu = new Random().nextInt(30) == 1;
         System.out.println("Atendeu? " + atendeu);
         // negando o ato de continuar tocando
         return !atendeu;// tocando will be false when atendeu be true
