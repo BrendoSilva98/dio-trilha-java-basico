@@ -7,6 +7,8 @@ public class Contador {
 		int parametroUm = terminal.nextInt();
 		System.out.println("Digite o segundo parâmetro");
 		int parametroDois = terminal.nextInt();
+		// fechar o Scanner usando terminal.close();
+		// Alternativamente poderia utilizar try-with-resouces
 		terminal.close();
 
 		try {
