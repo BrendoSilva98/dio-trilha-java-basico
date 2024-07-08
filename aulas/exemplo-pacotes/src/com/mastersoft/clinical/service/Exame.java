@@ -1,4 +1,4 @@
-package com.mastersoft.clinical.model;
+package com.mastersoft.clinical.service;
 
 public class Exame {
     
