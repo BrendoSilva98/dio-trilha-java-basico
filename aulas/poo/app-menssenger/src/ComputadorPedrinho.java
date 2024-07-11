@@ -1,22 +1,27 @@
-/*
- * Simulação do uso da classe MSNMessenger
- */
+import app.FacebookMessenger;
+import app.MSNMessenger;
+import app.ServicoMensagemInstantanea;
+import app.Telegram;
+
 public class ComputadorPedrinho {
-	public static void main(String[] args) {
-		//abrindo MSN Messenger
-        System.out.println("MSN");
-		MSNMessenger msn = new MSNMessenger();
-		msn.enviarMensagem();		
-		msn.receberMensagem();
+    public static void main(String[] args) {
 
-        System.out.println("Facebook");
-        FacebookMessenger fcb = new FacebookMessenger();
-		fcb.enviarMensagem();		
-		fcb.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
 
-        System.out.println("Telegram");
-        Telegram tlg = new Telegram();
-		tlg.enviarMensagem();		
-		tlg.receberMensagem();
-	}
+        /*
+         * NÃO SE SABE QUAL APP
+         * MAS QUALQUER UM DEVERÁ ENVIAR E RECEBER MENSAGEM
+         */
+        String appEscolhido = "tlg";
+
+        if (appEscolhido.equals("msn"))
+            smi = new MSNMessenger();
+        else if (appEscolhido.equals("fbm"))
+            smi = new FacebookMessenger();
+        else if (appEscolhido.equals("tlg"))
+            smi = new Telegram();
+
+        smi.enviarMensagem();
+        smi.receberMensagem();
+    }
 }
