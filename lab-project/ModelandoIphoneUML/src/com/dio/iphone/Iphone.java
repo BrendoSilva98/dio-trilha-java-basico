@@ -8,10 +8,10 @@ import com.dio.iphone.apps.safari.Safari;
 public class Iphone implements Phone, Ipod, Safari {
     // Phone implementation
     public void call(String number) {
-        System.out.println("Calling number " + number);
+        System.out.println("Calling number: " + number);
     }
 
-    public void anwersCall() {
+    public void answerCall() {
         System.out.println("Answering call");
     }
 
@@ -29,12 +29,12 @@ public class Iphone implements Phone, Ipod, Safari {
     }
 
     public void selectMusic(String music) {
-        System.out.println("Selecting Music " + music);
+        System.out.println("Selecting Music: " + music);
     }
 
     // Safari implementation
     public void showPage(String url) {
-        System.out.println("Showing Page " + url);
+        System.out.println("Showing Page: " + url);
     }
 
     public void addNewTab() {

@@ -16,7 +16,7 @@ public class User {
 
         System.out.println("\nSimulating user using the Phone: ");
         phone.call("(XX) XXXXXXX-XX");
-        phone.anwersCall();
+        phone.answerCall();
         phone.startVoicemail();
 
         System.out.println("\nSimulating user using the Music Player: ");
